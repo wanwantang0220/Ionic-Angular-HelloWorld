@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title mode="ios">Home</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentFilter">
+        <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
+     </button>
+      <button ion-button icon-only (click)="presentFilter">
+        <ion-icon name="logo-twitter" ></ion-icon>
+     </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content>
+  <!-- <h3>Ionic Menu Starter</h3>  -->
+  <!-- <button ion-button secondary menuToggle>Toggle Menu</button>  -->
+
+  <ion-tabs>
+    <ion-tab tabTitle="Music" [root]="tab1"></ion-tab>
+    <ion-tab tabTitle="Movies" [root]="tab2"></ion-tab>
+    <ion-tab tabTitle="Lists" [root]="tab3"></ion-tab>
+  </ion-tabs>
+</ion-content>

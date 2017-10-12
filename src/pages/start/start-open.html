@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+
+    <ion-buttons start mode="ios">
+      <button ion-button (click)="dismiss()">
+        <ion-icon name="arrow-back" showWhen="android, windows"></ion-icon>
+      </button>
+    </ion-buttons> 
+
+    <ion-buttons end mode="ios">
+        <button ion-button (click)="dismiss()">
+        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title mode="ios">Description</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+      </ion-avatar>
+      <h2>{{character.name}}</h2>
+      <p>{{character.quote}}</p>
+    </ion-item>
+    <ion-item *ngFor="let item of character['items']">
+      {{item.title}}
+      <ion-note item-end>
+        {{item.note}}
+      </ion-note>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
