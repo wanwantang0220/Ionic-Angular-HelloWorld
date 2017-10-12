@@ -1,3 +1,4 @@
+import { SelectPage } from '../pages/select/select';
 import { DetailPage } from '../pages/detail/detail';
 import { ContactService } from './contact.service';
 import { rootRouterConfig } from './app.routes';
@@ -28,7 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Tab2,
     Tab3,
     StartPage,
-    DetailPage
+    DetailPage,
+    SelectPage
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Tab1,
     Tab2,
     Tab3,
-    StartPage, DetailPage
+    StartPage, 
+    DetailPage,
+    SelectPage
   ],
   providers: [
     StatusBar,

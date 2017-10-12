@@ -8,7 +8,8 @@ import { ModalController, Platform, NavParams, ViewController } from 'ionic-angu
 })
 
 export class StartPage {
-
+  character;
+  
   constructor( public platform: Platform, public params: NavParams, public viewCtrl: ViewController) {
     var characters = [
       {
