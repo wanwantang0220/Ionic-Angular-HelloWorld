@@ -1,0 +1,26 @@
+import { Observable } from 'rxjs/Rx';
+import { Http } from '@angular/http';
+import { Injectable } from '@angular/core';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
+
+@Injectable()
+export class LookService {
+    data: string;
+
+    constructor(public http: Http) {
+        console.log('Hello LookService Provider');
+    }
+    public getAllcategory(): Observable<string> {
+        return this.http.get("assets/json/allcategory.json")
+            .map(res => res.json().content);
+    }
+    public getGoodsList(): Observable<string> {
+        return this.http.get("assets/json/look_list.json")
+            .map(res => res.json().content);
+    }
+    public getShopCartRecommendList(): Observable<string> {
+        return this.http.get("assets/json/shopcart.json")
+            .map(res => res.json().content);
+    }
+}

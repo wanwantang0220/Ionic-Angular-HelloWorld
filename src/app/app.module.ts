@@ -1,3 +1,6 @@
+import { LookDetailPage } from '../pages/look-detail/look-detail';
+import { LookService } from '../providers/look-service';
+import { LookPage } from '../pages/look/look';
 import { SelectPage } from '../pages/select/select';
 import { DetailPage } from '../pages/detail/detail';
 import { ContactService } from './contact.service';
@@ -30,7 +33,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Tab3,
     StartPage,
     DetailPage,
-    SelectPage
+    SelectPage,
+    LookPage,
+    LookDetailPage
   ],
   imports: [
     BrowserModule,
@@ -49,13 +54,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Tab3,
     StartPage, 
     DetailPage,
-    SelectPage
+    SelectPage,
+    LookPage,
+    LookDetailPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ContactService
+    ContactService,
+    LookService
   ]
 })
 export class AppModule {}

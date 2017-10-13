@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Look-Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+
+    <div>
+        <img src="assets/img/details/detail01.jpg" alt="" style="width: 30%; height:65px;">
+      <ion-col col-auto>
+        <p>{{ item.ProductName}}</p>
+      </ion-col>
+      <ion-col>
+          <p> {{item.ExpiredTime}}</p>
+      </ion-col>
+    </div>
+    <!-- <ion-row>
+      <ion-label>名称: {{ item.ProductName}}</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label>test</ion-label>
+    </ion-row> -->
+  </ion-item>
+
+  <ion-item>
+    <ion-label>QuanInfo: {{item.QuanInfo}}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>QuanUrl:{{item.QuanUrl}}</ion-label>
+  </ion-item>
+
+</ion-content>

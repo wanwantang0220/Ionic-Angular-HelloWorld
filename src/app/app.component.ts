@@ -1,3 +1,4 @@
+import { LookPage } from '../pages/look/look';
 import { SelectPage } from '../pages/select/select';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
@@ -25,6 +26,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
       { title: 'Select', component: SelectPage },
+      { title: 'Look', component: LookPage }
     ];
 
   }

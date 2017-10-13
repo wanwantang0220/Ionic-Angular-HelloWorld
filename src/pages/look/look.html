@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Look</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="good_list">
+
+  <ion-list>
+<ion-item *ngFor="let item of obj_GoodsListData" (click)="itemSelected(item)">
+
+      <img item-left src="{{Image_head_Url+item.Picture}}" style="width: 30%; height:65px;">
+
+      <div item-right>
+        <ion-row>
+          <ion-col col-auto>
+            <a>{{"test1"+item.OriginStoreName}}</a>
+          </ion-col>
+          <ion-col>
+            <p>{{item.ProductName}}</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <a>{{item.DiscountRate+"折"}}</a>
+          <p>{{"月销"+item.SalesVolume}}</p>
+        </ion-row>
+        <ion-row>
+          <a>{{item.PromotionInfoPrice}}</a>
+          <div class="col" align-self-center col-auto>
+            <a>{{item.QuanInfo}}</a>
+          </div>
+        </ion-row>
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

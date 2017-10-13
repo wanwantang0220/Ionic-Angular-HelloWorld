@@ -9,7 +9,9 @@
 
 <ion-content>
   <ion-item>
-    <ion-label> {{result}}</ion-label>
+    <ion-label> {{gaming + notifications +os}}</ion-label>
+
+
   </ion-item>
 
 
@@ -24,7 +26,7 @@
     <ion-item>
       <ion-label>Gender</ion-label>
       <ion-select [(ngModel)]="gender">
-        <ion-option value="f">Female</ion-option>
+        <ion-option value="f" (select)="stpSelect2()">Female</ion-option>
         <ion-option value="m">Male</ion-option>
       </ion-select>
     </ion-item>

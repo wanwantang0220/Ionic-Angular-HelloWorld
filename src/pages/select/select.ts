@@ -20,7 +20,7 @@ export class SelectPage {
 
     constructor() {
 
-        this.result = this.gaming + this.gender;
+        this.result = this.month;
 
         this.musicAlertOpts = {
             title: '1994 Music',
@@ -65,6 +65,11 @@ export class SelectPage {
 
     stpSelect() {
         console.log('STP selected');
+    }
+
+    stpSelect2() {
+        // this.result = this.gender;
+        console.log('test','test');
     }
 }
 

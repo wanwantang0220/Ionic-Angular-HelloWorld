@@ -9,5 +9,6 @@ export class DetailPage {
 
     constructor(params: NavParams) {
         this.item = params.data.item;
+        console.log("item:", this.item);
     }
 }
