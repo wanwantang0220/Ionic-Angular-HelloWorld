@@ -1,4 +1,4 @@
-import { GOODLIST_URL } from '../../providers/constants';
+import { GOODLIST_HEAD_URL } from '../../providers/constants';
 import { NavParams } from 'ionic-angular';
 import { Component } from '@angular/core';
 
@@ -12,7 +12,7 @@ export class LookDetailPage {
     item;
 
     constructor(params: NavParams) {
-        this.Image_head_Url = GOODLIST_URL;
+        this.Image_head_Url = GOODLIST_HEAD_URL;
         this.item = params.data.item;
         console.log("item  2:", this.item);
     }
