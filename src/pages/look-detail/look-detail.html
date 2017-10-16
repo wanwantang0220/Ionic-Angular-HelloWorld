@@ -10,22 +10,28 @@
 <ion-content>
 
   <ion-item>
+    <div>
+      <a  [routerLink]="['/router']">Router</a>
+    </div>
+  </ion-item>
+
+  <ion-item>
+    <button ion-button (click)="gotoRouter()">Router2</button>
+    <router-outlet></router-outlet>
+  </ion-item>
+
+  <ion-item>
 
     <div>
-        <img src="{{Image_head_Url+item.Picture}}" style="width: 30%; height:65px;">
+      <img src="{{Image_head_Url+item.Picture}}" style="width: 30%; height:65px;">
       <ion-col col-auto>
         <p>{{ item.ProductName}}</p>
       </ion-col>
       <ion-col>
-          <p> {{item.ExpiredTime}}</p>
+        <p> {{item.ExpiredTime}}</p>
       </ion-col>
     </div>
-    <!-- <ion-row>
-      <ion-label>名称: {{ item.ProductName}}</ion-label>
-    </ion-row>
-    <ion-row>
-      <ion-label>test</ion-label>
-    </ion-row> -->
+
   </ion-item>
 
   <ion-item>
@@ -35,5 +41,6 @@
   <ion-item>
     <ion-label>QuanUrl:{{item.QuanUrl}}</ion-label>
   </ion-item>
+
 
 </ion-content>

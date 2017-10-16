@@ -1,3 +1,4 @@
+import { InputPage } from '../pages/input/input';
 import { LookPage } from '../pages/look/look';
 import { SelectPage } from '../pages/select/select';
 import { Component, ViewChild } from '@angular/core';
@@ -26,7 +27,8 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
       { title: 'Select', component: SelectPage },
-      { title: 'Look', component: LookPage }
+      { title: 'Look', component: LookPage },
+      { title: 'Input', component: InputPage }
     ];
 
   }

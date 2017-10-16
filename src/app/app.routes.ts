@@ -1,3 +1,6 @@
+import { Router2Page } from '../pages/router/router2';
+import { Tab1 } from '../pages/tab/tab1';
+import { RouterPage } from '../pages/router/router';
 import { StartPage } from '../pages/start/start';
 import { ListPage } from '../pages/list/list';
 import { HomePage } from '../pages/home/home';
@@ -17,5 +20,13 @@ export const rootRouterConfig: Routes = [
      {
          path:"start/:item",
          component: StartPage
+     },
+     {
+         path:"router",
+         component:RouterPage
+     },
+     {
+         path:"router2",
+         component:Router2Page
      }
 ];

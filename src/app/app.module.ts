@@ -1,3 +1,6 @@
+import { InputPage } from '../pages/input/input';
+import { Router2Page } from '../pages/router/router2';
+import { RouterPage } from '../pages/router/router';
 import { LookDetailPage } from '../pages/look-detail/look-detail';
 import { LookService } from '../providers/look-service';
 import { LookPage } from '../pages/look/look';
@@ -35,7 +38,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailPage,
     SelectPage,
     LookPage,
-    LookDetailPage
+    LookDetailPage,
+    RouterPage,
+    Router2Page,
+    InputPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +62,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     DetailPage,
     SelectPage,
     LookPage,
-    LookDetailPage
+    LookDetailPage,
+    RouterPage,
+    Router2Page,
+    InputPage
   ],
   providers: [
     StatusBar,

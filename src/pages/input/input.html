@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Input</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <input #box (keyup)="onKey(box.value)">
+    <p>{{values}}</p>
+  </ion-item>
+
+  <ion-item>
+
+    <input #newFlag (keyup.enter)="addFlag(newFlag.value)" (blur)="addFlag(newFlag.value);newFlag.value=''">
+    <button ion-button (click)="addFlag(newFlag.value)">Add</button>
+    <ion-list>
+      <ion-item *ngFor="let flag of flags">
+        {{flag}}
+      </ion-item>
+    </ion-list>
+  </ion-item>
+</ion-content>
