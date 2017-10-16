@@ -18,7 +18,7 @@ export class InputPage {
         }
     }
 
-    onKey(value: string) {
-        this.values += value + '|';
+    onKey(values: string) {
+        this.values += values + '|';
     }
 }
