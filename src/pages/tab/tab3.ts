@@ -1,9 +1,7 @@
 import { DetailPage } from '../detail/detail';
 import { StartPage } from '../start/start';
-import { ContactService } from '../../app/contact.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { AlertController, LoadingController, ModalController, NavController, NavParams } from 'ionic-angular';
+import { ModalController, NavController } from 'ionic-angular';
 
 @Component({
   templateUrl: 'tab3.html'

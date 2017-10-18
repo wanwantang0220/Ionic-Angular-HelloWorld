@@ -1,5 +1,4 @@
 import { NavParams } from 'ionic-angular';
-import { Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 

@@ -13,19 +13,20 @@
     <ion-label>{{values}}</ion-label>
     <input #box (keyup)="onKey(box.value)">
 
+    <ion-item>
+      <ion-label color="primary">Inline Label</ion-label>
+      <ion-input placeholder="Text Input"></ion-input>
+    </ion-item>
 
+    <ion-item>
 
-    
-  </ion-item>
-
-  <ion-item>
-
-    <input #newFlag (keyup.enter)="addFlag(newFlag.value)" (blur)="addFlag(newFlag.value);newFlag.value=''">
-    <button ion-button (click)="addFlag(newFlag.value)">Add</button>
-    <ion-list>
-      <ion-item *ngFor="let flag of flags">
-        {{flag}}
-      </ion-item>
-    </ion-list>
+      <input #newFlag (keyup.enter)="addFlag(newFlag.value)" (blur)="addFlag(newFlag.value);newFlag.value=''">
+      <button ion-button (click)="addFlag(newFlag.value)">Add</button>
+      <ion-list>
+        <ion-item *ngFor="let flag of flags">
+          {{flag}}
+        </ion-item>
+      </ion-list>
+    </ion-item>
   </ion-item>
 </ion-content>

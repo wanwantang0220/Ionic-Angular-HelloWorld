@@ -1,6 +1,4 @@
 import { LookDetailPage } from '../look-detail/look-detail';
-import { SelectPage } from '../select/select';
-import { DetailPage } from '../detail/detail';
 import { NavController, NavParams } from 'ionic-angular';
 import { LookService } from '../../providers/look-service';
 import { Component } from '@angular/core';

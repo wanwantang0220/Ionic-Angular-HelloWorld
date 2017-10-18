@@ -1,3 +1,4 @@
+import { IonicStorageModule } from '@ionic/storage';
 import { InputPage } from '../pages/input/input';
 import { Router2Page } from '../pages/router/router2';
 import { RouterPage } from '../pages/router/router';
@@ -48,7 +49,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IonicModule.forRoot(MyApp),
     FormsModule, 
     HttpModule, 
-    RouterModule.forRoot(rootRouterConfig)
+    RouterModule.forRoot(rootRouterConfig),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

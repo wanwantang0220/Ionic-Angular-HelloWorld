@@ -1,6 +1,5 @@
-import { ListPage } from '../list/list';
-import { NavController, NavParams } from 'ionic-angular';
 import { Component } from '@angular/core';
+
 
 @Component({
     templateUrl: 'select.html'
